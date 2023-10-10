@@ -1,0 +1,22 @@
+
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-blue {
+    background-color: var(--color-blue);
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
