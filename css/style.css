@@ -210,26 +210,9 @@ margin-top: 10px;
 margin-bottom: 16px;
 }
 
-.icone{
-  width: 20px;
-  height: 20px;
-
-  
-  
-  
-}
-
-.icon-net{
-
- max-width: 44px;
- color: #AFB1B8;
- 
-
- 
 
 
 
-}
 
 .icon{
 display: flex;
@@ -245,13 +228,7 @@ margin-left: 30px;
 
   }
 
-  .icon-net.icone{
-
-    transition: var(--transition)
-  }
-  .icon-net.icone:hover{
-    color: var(--color-blue)
-  }
+  
 
 .pipl{
   display: flex;
@@ -268,6 +245,17 @@ margin-left: 30px;
   background-color: var(--color-blue);
 }
 
-.pupl:hover svg{
-  fill: #FFFFFF;
+.pipl:hover.icone{
+  
+  fill: #FFFFFF ;
+ 
+  
 }
+.icone{
+width: 20px;
+height: 20px;
+fill: #AFB1B8;
+
+
+}
+
