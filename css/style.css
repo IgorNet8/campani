@@ -450,6 +450,7 @@ form {
 }
 
 .modall{
+
   position: fixed;
   top: 0;
   bottom: 0;
@@ -458,18 +459,21 @@ form {
   background-color: rgba(0,0, 0,0.5);
   width: 100%;
   height: 100%;
- display: flex;
+ 
+ display: none;
 }
 
 .modall-window{
   max-width: 450px;
-  height: 609px;
+ 
   background-color: #FFFFFF;
   
   margin: auto;
   padding: 15px;
-  display: block;
+  
 border-radius: 4px;
+
+
 
   
   
@@ -659,8 +663,8 @@ padding-left: 25px;
 .checkbox__label:before{
   content: "";
   display: block;
-  width: 16px;
-  height: 15px;
+  width: 18px;
+  height: 16px;
   border: 1px solid #212121;  ;
   background-color: #ffffff;
   position: absolute;
@@ -668,7 +672,8 @@ padding-left: 25px;
   left: 0;
   z-index: 1;
   border-radius: 2px;
-  transition: background .1s ease ;
+  transition: opacity .1s ease ;
+  
 }
 
 .checkbox__label:after{
@@ -685,11 +690,13 @@ left: 0;
 z-index: 2;
 
 transition: opacity .1s linear;
+opacity: 0;
 }
 
 .checkbox__input:checked + .checkbox__label:before{
   background-color: #428bc7;
-  border-radius: #20384d  ;
+  border: #20384d;
+  border-radius: 2px  #20384d  ;
 }
 
 .checkbox__input:checked + .checkbox__label::after{
@@ -700,4 +707,95 @@ transition: opacity .1s linear;
   margin-bottom: 30px;
 }
 
+.modall-window{
+  padding-bottom: 30px;
+}
 
+
+.portfolio-menu{
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* column-gap: 50px;*/
+  margin-top: 94px;
+ 
+  margin-bottom: 34px;
+}
+
+.menu-content{
+  
+  
+height: 38px;
+margin-left: 20px;
+margin-left: 8px;
+
+}
+
+
+.content__link{
+
+
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+padding: 6px 22px;
+border-radius: 4px;
+
+}
+
+.content__link:hover {
+  background-color: #2196F3;
+  color: #FFFFFF;
+  box-shadow: 0 0 10px #2196F3;
+}
+ 
+.card{
+ 
+background-color:#EEEEEE ;
+border: 1px solid #EEEEEE
+}
+
+.card__img{
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
+}
+
+.card__body{
+  padding: 40px;
+}
+
+.card__title{
+  margin-top: 0;
+  margin-bottom: 4px;
+  
+font-size: 18px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0.06em;
+text-align: left;
+color:  #212121;
+
+
+}
+
+.card__desc{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.project-box{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+column-gap: 30px;
+row-gap: 30px;
+
+margin-bottom: 94px;
+
+
+}
