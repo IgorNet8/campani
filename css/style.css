@@ -735,7 +735,7 @@ margin-left: 8px;
 
 
 .content__link{
-
+background-color: #757575;
 
 font-size: 16px;
 font-weight: 500;
@@ -753,6 +753,16 @@ border-radius: 4px;
   color: #FFFFFF;
   box-shadow: 0 0 10px #2196F3;
 }
+
+.content__link-active{
+  
+    background-color: #2196f3; 
+    color: #ffffff; 
+    box-shadow: 0 0 10px #2196f3; 
+  
+}
+
+
  
 .card{
  
@@ -784,18 +794,20 @@ color:  #212121;
 
 }
 
-.card__desc{
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 .project-box{
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(auto-fill, 370px);
 column-gap: 30px;
 row-gap: 30px;
 
 margin-bottom: 94px;
 
 
+}
+
+.modall.actyv{
+  display: block;
+  
 }
